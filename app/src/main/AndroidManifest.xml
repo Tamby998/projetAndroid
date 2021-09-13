@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotrana">
         <activity
-            android:name=".Registration"
+            android:name=".vue.Registration"
             android:exported="true" />
         <activity
-            android:name=".Login"
+            android:name=".vue.Login"
             android:exported="true"
             android:label="Login" />
         <activity
-            android:name=".MainActivity"
+            android:name=".vue.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

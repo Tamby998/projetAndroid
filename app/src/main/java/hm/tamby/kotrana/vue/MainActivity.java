@@ -1,10 +1,12 @@
-package hm.tamby.kotrana;
+package hm.tamby.kotrana.vue;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import hm.tamby.kotrana.R;
 
 public class MainActivity extends AppCompatActivity {
 

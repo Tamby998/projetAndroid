@@ -1,4 +1,4 @@
-package hm.tamby.kotrana;
+package hm.tamby.kotrana.vue;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
+
+import hm.tamby.kotrana.R;
 
 public class Login extends AppCompatActivity {
 
