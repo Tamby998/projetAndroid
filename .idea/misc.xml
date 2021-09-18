@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/M1/Android/projetAndroid/app/src/main/res/layout/activity_accueil.xml" value="0.22" />
         <entry key="..\:/M1/Android/projetAndroid/app/src/main/res/layout/activity_login2.xml" value="0.22" />
         <entry key="..\:/M1/Android/projetAndroid/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/M1/Android/projetAndroid/app/src/main/res/layout/activity_registration.xml" value="0.25" />
+        <entry key="..\:/M1/Android/projetAndroid/app/src/main/res/layout/app_bar_accueil.xml" value="0.22" />
+        <entry key="..\:/M1/Android/projetAndroid/app/src/main/res/layout/content_accueil.xml" value="0.1" />
+        <entry key="..\:/M1/Android/projetAndroid/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
+        <entry key="..\:/M1/Android/projetAndroid/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/M1/Android/projetAndroid/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
+        <entry key="..\:/M1/Android/projetAndroid/app/src/main/res/layout/nav_header_accueil.xml" value="0.18" />
+        <entry key="..\:/M1/Android/projetAndroid/app/src/main/res/menu/activity_main_drawer.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/btnsignin_gradient.xml" value="0.26666666666666666" />
         <entry key="app/src/main/res/drawable-v24/btnsignup_gradient.xml" value="0.26666666666666666" />
         <entry key="app/src/main/res/drawable-v24/ic_lock_white_24dp.xml" value="0.2531531531531532" />

@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotrana">
         <activity
+            android:name=".vue.Accueil"
+            android:exported="true"
+            android:label="@string/title_activity_accueil"
+            android:theme="@style/Theme.Kotrana.NoActionBar" />
+        <activity
             android:name=".vue.Registration"
             android:exported="true" />
         <activity
