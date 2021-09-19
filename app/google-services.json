@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "597598491422",
+    "project_id": "kotrana-94699",
+    "storage_bucket": "kotrana-94699.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597598491422:android:7792511f499e68df93af0f",
+        "android_client_info": {
+          "package_name": "hm.tamby.kotrana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597598491422-m6oef1k172ecq2kipee5c3auads55gcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbCXcQIsw2OwG_sPpGsb2SqbD-Ocjsz9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597598491422-m6oef1k172ecq2kipee5c3auads55gcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

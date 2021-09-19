@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="hm.tamby.kotrana">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotrana">
+        <activity
+            android:name=".ListDetails"
+            android:exported="true" />
+        <activity
+            android:name=".HomePage"
+            android:exported="true"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/Theme.Kotrana.NoActionBar" />
         <activity
             android:name=".Registration"
             android:exported="true" />

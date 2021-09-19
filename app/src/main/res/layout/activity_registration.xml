@@ -119,6 +119,12 @@
                 android:text="@string/signin_redirect"
                 android:textColor="@color/gray" />
 
+            <!-- ProgressBar for loading time -->
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
 
 
         </LinearLayout>
