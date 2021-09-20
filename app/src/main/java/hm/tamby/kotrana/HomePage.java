@@ -1,7 +1,11 @@
 package hm.tamby.kotrana;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -35,6 +39,18 @@ public class HomePage extends AppCompatActivity {
         .setAction("Action", null).show();
         }
         });*/
+
+        TextView card_view_image_title = findViewById(R.id.card_view_image_title) ;
+        card_view_image_title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ListDetails.class) ;
+                startActivity(intent) ;
+//                Toast.makeText(getApplicationContext(), "Click" , Toast.LENGTH_SHORT).show() ;
+            }
+        });
+
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each

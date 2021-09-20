@@ -66,7 +66,7 @@ public class Login extends AppCompatActivity {
             auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(task -> {
                 if(task.isSuccessful())
                 {
-                    startActivity(new Intent(Login.this, ListDetails.class));
+                    startActivity(new Intent(Login.this, HomePage.class));
                 }
                 else
                 {

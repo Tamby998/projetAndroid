@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/background_login.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/drawable-v24/btnsignin_gradient.xml" value="0.26666666666666666" />
         <entry key="app/src/main/res/drawable-v24/btnsignup_gradient.xml" value="0.26666666666666666" />
         <entry key="app/src/main/res/drawable-v24/ic_lock_white_24dp.xml" value="0.2531531531531532" />
@@ -15,6 +16,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.20833333333333334" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.17760416666666667" />
+        <entry key="app/src/main/res/layout/activity_video_main.xml" value="0.2509009009009009" />
         <entry key="app/src/main/res/layout/app_bar_home_page.xml" value="0.2693693693693694" />
         <entry key="app/src/main/res/layout/content_home_page.xml" value="0.2693693693693694" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.2693693693693694" />

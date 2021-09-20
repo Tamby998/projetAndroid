@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotrana">
         <activity
+            android:name=".VideoMain"
+            android:exported="true" />
+        <activity
             android:name=".ListDetails"
             android:exported="true" />
         <activity
