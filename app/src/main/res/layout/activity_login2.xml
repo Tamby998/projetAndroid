@@ -8,21 +8,20 @@
     tools:context=".Login">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="398dp"
+        android:layout_height="584dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
 
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-5dp">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginStart="50dp"
             android:layout_marginEnd="50dp"
-            >
+            android:orientation="vertical">
 
 
             <ImageView
@@ -30,10 +29,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
 
-                android:layout_marginBottom="55dp"
                 android:layout_marginTop="18dp"
+                android:layout_marginBottom="55dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/logo" />
+                android:src="@drawable/unknown1" />
 
 
             <ImageView
@@ -47,17 +46,17 @@
 
             <AutoCompleteTextView
                 android:id="@+id/atvEmailLog"
-                android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/rounded_rect"
+                android:drawableStart="@drawable/icon_person"
                 android:drawableLeft="@drawable/icon_person"
                 android:drawablePadding="10dp"
-                android:drawableStart="@drawable/icon_person"
                 android:hint="@string/emailReg"
-                android:paddingEnd="10dp"
+                android:inputType="textEmailAddress"
                 android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/gray"
                 android:textSize="15sp" />
@@ -65,31 +64,20 @@
 
             <AutoCompleteTextView
                 android:id="@+id/atvPasswordLog"
-                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/rounded_rect"
+                android:drawableStart="@drawable/icon_password"
                 android:drawableLeft="@drawable/icon_password"
                 android:drawablePadding="10dp"
-                android:drawableStart="@drawable/icon_password"
                 android:hint="@string/passwordReg"
-                android:paddingEnd="10dp"
+                android:inputType="textPassword"
                 android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/gray"
                 android:textSize="15sp" />
-
-
-            <TextView
-                android:id="@+id/tvForgotPass"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="3dp"
-                android:text="@string/forgot_password"
-                android:textColor="@color/black" />
 
 
             <Button
@@ -102,14 +90,14 @@
                 android:textColor="#FFFFFF" />
 
 
-            <ImageView
-                android:id="@+id/ivFacebook"
+            <Button
+                android:id="@+id/btnSignUn"
                 android:layout_width="match_parent"
-                android:layout_height="51dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:contentDescription="Social site button"
-                android:src="@drawable/btn_twitter" />
-
+                android:background="@drawable/btnsignup_gradient"
+                android:text="@string/sign_upReg"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/tvSignIn"
@@ -127,7 +115,6 @@
                 android:visibility="gone" />
 
         </LinearLayout>
-
 
 
     </ScrollView>

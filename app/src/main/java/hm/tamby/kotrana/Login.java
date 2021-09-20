@@ -22,8 +22,8 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
 
-        ImageView imageView = findViewById(R.id.ivFacebook) ;
-        imageView.setOnClickListener(new View.OnClickListener() {
+        Button btnSignUn = findViewById(R.id.btnSignUn) ;
+        btnSignUn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Registration.class) ;

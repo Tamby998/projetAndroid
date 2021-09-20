@@ -3,6 +3,7 @@ package hm.tamby.kotrana;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -45,6 +46,36 @@ public class HomePage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ListDetails.class) ;
+                startActivity(intent) ;
+//                Toast.makeText(getApplicationContext(), "Click" , Toast.LENGTH_SHORT).show() ;
+            }
+        });
+
+        TextView card_view_image_title1 = findViewById(R.id.card_view_image_title1) ;
+        card_view_image_title1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ListDetailsJeuDePass.class) ;
+                startActivity(intent) ;
+//                Toast.makeText(getApplicationContext(), "Click" , Toast.LENGTH_SHORT).show() ;
+            }
+        });
+
+        TextView card_view_image_title2 = findViewById(R.id.card_view_image_title2) ;
+        card_view_image_title2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ListDetailsTirs.class) ;
+                startActivity(intent) ;
+//                Toast.makeText(getApplicationContext(), "Click" , Toast.LENGTH_SHORT).show() ;
+            }
+        });
+
+        TextView card_view_image_title3 = findViewById(R.id.card_view_image_title3) ;
+        card_view_image_title3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ListDetailsDrible.class) ;
                 startActivity(intent) ;
 //                Toast.makeText(getApplicationContext(), "Click" , Toast.LENGTH_SHORT).show() ;
             }

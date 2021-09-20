@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotrana">
         <activity
+            android:name=".ListDetailsDrible"
+            android:exported="true" />
+        <activity
+            android:name=".ListDetailsTirs"
+            android:exported="true" />
+        <activity
+            android:name=".ListDetailsJeuDePass"
+            android:exported="true" />
+        <activity
             android:name=".VideoMain"
             android:exported="true" />
         <activity
