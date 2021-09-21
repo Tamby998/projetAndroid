@@ -15,11 +15,20 @@ import androidx.lifecycle.ViewModelProvider;
 import hm.tamby.kotrana.R;
 import hm.tamby.kotrana.databinding.FragmentHomeBinding;
 
+/**
+ * HOmeFragment
+ */
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     private FragmentHomeBinding binding;
 
+    /**
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -38,6 +47,9 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
+    /**
+     * Destroy
+     */
     @Override
     public void onDestroyView() {
         super.onDestroyView();

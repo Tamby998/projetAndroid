@@ -14,14 +14,19 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-
+/**
+ * Details
+ */
 public class ListDetailsTirs extends AppCompatActivity {
 
     RecyclerView recyclerView;
     DatabaseReference database;
     MyAdapter myAdapter;
     ArrayList<Details> details;
-
+    /**
+     * Recuperation donnees dans Firebase Realtime
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +42,10 @@ public class ListDetailsTirs extends AppCompatActivity {
         recyclerView.setAdapter(myAdapter);
 
         database.addValueEventListener(new ValueEventListener() {
+            /**
+             * Recuperation des donnees
+             * @param snapshot
+             */
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
@@ -46,6 +55,10 @@ public class ListDetailsTirs extends AppCompatActivity {
                 myAdapter.notifyDataSetChanged();
             }
 
+            /**
+             * Error
+             * @param error
+             */
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 

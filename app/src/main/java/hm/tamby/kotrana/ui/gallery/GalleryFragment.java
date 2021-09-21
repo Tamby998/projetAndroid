@@ -15,12 +15,20 @@ import androidx.lifecycle.ViewModelProvider;
 import hm.tamby.kotrana.R;
 import hm.tamby.kotrana.databinding.FragmentGalleryBinding;
 
+/**
+ * Gallery
+ */
 public class GalleryFragment extends Fragment {
 
     private GalleryViewModel galleryViewModel;
     private FragmentGalleryBinding binding;
 
-
+    /**
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
@@ -33,6 +41,9 @@ public class GalleryFragment extends Fragment {
         return root;
     }
 
+    /**
+     * Destroy
+     */
     @Override
     public void onDestroyView() {
         super.onDestroyView();

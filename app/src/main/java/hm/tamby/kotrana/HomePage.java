@@ -20,11 +20,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import hm.tamby.kotrana.R;
 import hm.tamby.kotrana.databinding.ActivityHomePageBinding;
 
+/**
+ * Home Page
+ */
 public class HomePage extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityHomePageBinding binding;
 
+    /**
+     * Home Page et les Menu Nav
+      * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +80,10 @@ public class HomePage extends AppCompatActivity {
 
         TextView card_view_image_title3 = findViewById(R.id.card_view_image_title3) ;
         card_view_image_title3.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Evenement Onclick
+             * @param view
+             */
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ListDetailsDrible.class) ;
@@ -95,6 +106,11 @@ public class HomePage extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
+    /**
+     * Création Menu
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -102,6 +118,10 @@ public class HomePage extends AppCompatActivity {
         return true;
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home_page);

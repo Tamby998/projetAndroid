@@ -11,16 +11,28 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+/**
+ * Adpter pour le BD
+ */
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViMyViewHolder> {
 
     Context context;
     ArrayList<Details> details;
 
+    /**
+     * @param context
+     * @param details
+     */
     public MyAdapter(Context context, ArrayList<Details> details) {
         this.context = context;
         this.details = details;
     }
 
+    /**
+     * @param parent
+     * @param viewType
+     * @return
+     */
     @NonNull
     @Override
     public MyViMyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -28,6 +40,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViMyViewHolder> 
         return new MyViMyViewHolder(v);
     }
 
+    /**
+     * @param holder
+     * @param position
+     */
     @Override
     public void onBindViewHolder(@NonNull MyViMyViewHolder holder, int position) {
         Details detail = details.get(position);
@@ -36,6 +52,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViMyViewHolder> 
         holder.duree.setText(detail.getDuree());
     }
 
+    /**
+     * @return
+     */
     @Override
     public int getItemCount() {
         return details.size();

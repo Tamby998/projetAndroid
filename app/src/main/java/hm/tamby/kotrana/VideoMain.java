@@ -6,9 +6,17 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.VideoView;
 
+/**
+ * VideoMain
+ */
 public class VideoMain extends AppCompatActivity {
 
     private VideoView videoView;
+
+    /**
+     * Recuperqtion de la video depuis Firebase
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,11 +28,19 @@ public class VideoMain extends AppCompatActivity {
 
         videoView.setVideoURI(uri);
     }
+
+    /**
+     * Resume
+     */
     @Override
     protected void onResume(){
         super.onResume();
         videoView.start();
     }
+
+    /**
+     * Pause
+     */
     @Override
     protected void onPause(){
         super.onPause();

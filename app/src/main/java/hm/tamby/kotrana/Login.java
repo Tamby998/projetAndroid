@@ -13,10 +13,18 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+
+/**
+ * Login
+ */
 public class Login extends AppCompatActivity {
     private EditText atvEmailLog, atvPasswordLog;
     FirebaseAuth auth;
 
+    /**
+     * Creation Activity Login
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +32,10 @@ public class Login extends AppCompatActivity {
 
         Button btnSignUn = findViewById(R.id.btnSignUn) ;
         btnSignUn.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Evenement pour e button SignUp
+             * @param view
+             */
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Registration.class) ;

@@ -1,5 +1,8 @@
 package hm.tamby.kotrana;
 
+/**
+ * Déclaration String lastMessage, duree, title
+ */
 public class Details {
     String lastMessage, title, duree;
 

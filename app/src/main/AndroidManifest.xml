@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="hm.tamby.kotrana">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,16 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotrana">
         <activity
-            android:name=".ListDetailsDrible"
-            android:exported="true" />
-        <activity
-            android:name=".ListDetailsTirs"
-            android:exported="true" />
-        <activity
-            android:name=".ListDetailsJeuDePass"
-            android:exported="true" />
-        <activity
-            android:name=".VideoMain"
+            android:name=".Webview"
             android:exported="true" />
         <activity
             android:name=".ListDetails"
@@ -46,7 +38,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
     </application>
 
 </manifest>

@@ -28,4 +28,5 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Entrainement</string>
     <string name="menu_slideshow">Paramétre</string>
+    <string name="default_notification_channel_id">test</string>
 </resources>

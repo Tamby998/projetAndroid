@@ -17,12 +17,19 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * Registration
+ */
 public class Registration extends AppCompatActivity {
     private FirebaseAuth auth;
     private EditText atvUsernameReg, atvEmailReg, atvPasswordReg;
     private Button btnSignUp;
     private ProgressBar progressbar;
 
+    /**
+     * Creation Activity Registration
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +47,9 @@ public class Registration extends AppCompatActivity {
 
         // Set on Click Listener on Registration button
         btnSignUp.setOnClickListener(new View.OnClickListener() {
+            /**
+             * @param v
+             */
             @Override
             public void onClick(View v)
             {
@@ -48,6 +58,9 @@ public class Registration extends AppCompatActivity {
         });
     }
 
+    /**
+     * Enregistrement nouveau user
+     */
     private void registerNewUser()
     {
 
@@ -84,8 +97,10 @@ public class Registration extends AppCompatActivity {
         }
 
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-
-                    @Override
+            /**
+             * @param task
+             */
+            @Override
                     public void onComplete(@NonNull Task<AuthResult> task)
                     {
                         if (task.isSuccessful()) {
