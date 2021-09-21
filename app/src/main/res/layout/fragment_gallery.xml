@@ -1,343 +1,320 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.gallery.GalleryFragment" >
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Echauffement alternatif" />
-
                 <ImageView
-                    android:id="@+id/imgEchaufAlternatif"
+                    android:id="@+id/card_view"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/echauffement_alternatif" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Echauffement : passes à ras de terre par paires" />
+                    android:id="@+id/titleA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Alternatif"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="20 min"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Les ballons/cônes seront numérotés. L'entraineur crie un numéro et toute l'équipe se déplace vers le ballon/cône correspondant. Dès que les joueurs arrivent à la position finale, ils ne bougent plus et c'est à l'entraineur de corriger toutes les fautes. L'entraineur peut aussi nommer toute une zone (p. ex. du pressing offensif). Dans ce cas, l'équipe se déplace en groupe vers la zone définie."
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
 
-                <ImageView
-                    android:id="@+id/imgPassras"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/passe_a_ras" />
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Echauffement : passes à mi-hauteur/aériennes par paires" />
-
                 <ImageView
-                    android:id="@+id/imgPassmi"
+                    android:id="@+id/card_view1"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/passe_mi" />
+                    android:layout_height="120dp"
+                    android:src="@drawable/passe_mi"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/titleB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Pas à ras de terre par paire"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="15 min"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/type1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="A est placé dans le carré, B (avec ballon) à env. 5 m devant le carré. - A court autour l'un des cônes arrières, fait rebondir la passe de B, court autour de l'autre cône - comme avant, mais maintenant il faut courir autour des cônes antérieurs - A fait une course en arrière par dessus la ligne d'arrière, redémarre en avant et relance le ballon"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+        </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Jeu de passe" />
 
-                <ImageView
-                    android:id="@+id/imgJeuPasse"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/jeu_passe" />
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jeu de passe avec tir au but" />
-
                 <ImageView
-                    android:id="@+id/imgPasseTir"
+                    android:id="@+id/card_view2"
                     android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/passesimple"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/titleC"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/passe_tir_au_but" />
+                    android:layout_marginLeft="8dp"
+                    android:text="Passe à mi - hauteur"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="5 min"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/type2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Exercice 1: Calmer le ballon et faire une passe retour à ras de terre (!) Exercice 2: Prendre le ballon vers le côté, calmer et faire une passe retour à ras de terre Exercice 3: Faire en même temps une passe volée latérale, calmer et faire une passe retour à ras de terre Exercice 4: Prendre le ballon en arrière, dribbler autour d'un cône et faire une passe retour Quel groupe à 2 sera le premier à achever 10 lignes de passes complètes?"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/imgPasseDeuxCarree"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+        </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jeu de passe simple" />
-
-                <ImageView
-                    android:id="@+id/imgPasseSimple"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/passesimple" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jeu de passe dans deux carrées" />
-
                 <ImageView
-                    android:id="@+id/imgPassecarree"
+                    android:id="@+id/card_view4"
                     android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/passe_a_ras"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/jeu_passe_deux_carrees" />
+                    android:layout_marginLeft="8dp"
+                    android:text="Jeu de passe"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/time4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="10 min"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/type4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Le jeu de passes est ouvert par une passe diagonale. Le destinataire fait rebondir le ballon au joueur en face de lui. Ce dernier fait une passe depuis le carré intérieur vers la zone extérieure. Ces trois lignes de passes se répètent constamment. Chaque joueur doit courir après son ballon et se positionner à ce cône vers lequel il a envoyé sa passe. Variante: Au début, avec 3 touches, puis, avec 2 touches et finalement en jeu direct. Une fois que les joueurs maitrisent bien l'exercice, on peut engager un 2. ballon. Les départs respectifs se feront simultanément aux cônes A et B où sont placés 2 joueurs chacun. Avec 2 ballons, vous aurez besoin de 10 joueurs. Maintenant, les joueurs doivent aussi faire attention à l'autre ballon pour bien maintenir leur rythme et une distance"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+        </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Tir au but double action" />
-
-                <ImageView
-                    android:id="@+id/imgTirDouble"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/tir_double" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Tir au but en circuit" />
-
                 <ImageView
-                    android:id="@+id/imgTiraubutCircuit"
+                    android:id="@+id/card_view5"
                     android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/passe_mi"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/title5"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/tir_au_but_circuit" />
+                    android:layout_marginLeft="8dp"
+                    android:text="Jeu de passe Simple"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/time5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="20 min"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/type5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Chaque joueur passe le ballon de l'intérieur du pied droit (gauche) au joueur en face. Quand le ballon retourne, le joueur le contrôle de l'intérieur du pied droit (gauche) et relance une passe, etc... Alternatives: - passer de l'intérieur du pied droit (gauche), arrêter le ballon et le relancer de l'intérieur du pied droit (gauche), puis courir en arrière autour de la cône - Contrôle du ballon du pied droit (gauche), passer du pied gauche (droit); (Astuce: Contrôlez et emportez le ballon en une touche pour que le ballon tombe directement sur l'autre pied et puisse être relancé immédiatement - diminuer la distance jusqu'à 2 - 3 metres en jouant des passes directes (Objectif: 100 touches) - changer entre frappes du cou-de-pied, de l'intérieur, passes de l'intérieur ou de l'exterieur du pied"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+        </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Tir au but avec changement de positions + centre" />
-
-                <ImageView
-                    android:id="@+id/imgTirChangement"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/tir_changement" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Dédoublement avec tir au but" />
-
                 <ImageView
-                    android:id="@+id/ImgDedoublement"
+                    android:id="@+id/card_view6"
                     android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/jeu_passe"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/title6"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/dedoublement" />
+                    android:layout_marginLeft="8dp"
+                    android:text="Jeu de passe avec tir au but"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/time6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="20 min"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/type6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Joueur A fait une passe longue (soit à ras de terre, soit aérienne) à joueur B et sprinte aussitôt après son ballon. B fait maintenant rebondir le ballon dans la foulée de A qui le transfère à joueur C. Celui-ci fait une passe courte à B. En même temps, joueur D démarre de sa position en direction de la surface de rép. B fait une passe dans la foulée de D pour que celui-ci puisse, en position centrale à environ 14 à 18 m de la cage, tirer au but. Après, D prend la position de A, les autres joueurs passent à la prochaine station"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Parcours de dribbles avec plusieurs changements de direction" />
-
-                <ImageView
-                    android:id="@+id/imgDirection"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/direction" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView19"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jeu de passes avec dribble et feinte en groupes à 3" />
-
-                <ImageView
-                    android:id="@+id/imgDribble_groupe"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/dribble_3" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView20"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Une-deux avec dribble dédoublant" />
-
-                <ImageView
-                    android:id="@+id/imgDribleDedoublant"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/drible_dedoublant" />
-            </LinearLayout>
-        </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
